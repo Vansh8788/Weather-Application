@@ -21,7 +21,7 @@ app.get("/weather/:city", async (req, res) => {
         const city = req.params.city;
 
         const response = await axios.get(
-            `https://api.openweathermap.org/data/weather?q=${city}&appid=${process.env.WEATHER_API_KEY}&units=metric`
+            `ttps://your-render-app.onrender.com/weather/${city}}&appid=${process.env.WEATHER_API_KEY}&units=metric`
         );
 
         res.json(response.data);
