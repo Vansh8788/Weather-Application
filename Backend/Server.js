@@ -8,7 +8,11 @@ const app = express();
 
 app.use(cors());
 
-app.get("/weather/:city", async (req, res) => {
+app.get("/", (req, res) => {
+  res.send("Weather API is running 🚀");
+});
+
+app.get("/weather/:city",(req, res) => {
     try {
         const city = req.params.city;
 
