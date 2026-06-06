@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: "https://your-netlify-site.netlify.app"
+        origin: "weather-application222.netlify.app"
     }
 ));
 
