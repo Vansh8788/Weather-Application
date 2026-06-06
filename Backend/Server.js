@@ -6,7 +6,11 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: "https://your-netlify-site.netlify.app"
+    }
+));
 
 app.get("/", (req, res) => {
   res.send("Weather API is running 🚀");
